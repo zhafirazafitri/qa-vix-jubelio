@@ -1,0 +1,362 @@
+{
+  "id": "5347b3e8-526d-4048-94ee-1012f7e1c80e",
+  "version": "2.0",
+  "name": "Login Jubelio",
+  "url": "https://app.jubelio.com/home/inventory",
+  "tests": [{
+    "id": "6e6bfa73-7c3e-4193-bb99-d41c103b80b9",
+    "name": "Login",
+    "commands": [{
+      "id": "3de14b47-f98e-4232-8bbc-b4229f15b5d5",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c637e5f-7257-4da0-81ea-f447fad4c23f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c135c992-0139-46a9-8b40-04122b05e756",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "qa.rakamin.jubelio@gmail.com"
+    }, {
+      "id": "ab9ca769-1294-41d3-b316-8e6e8e7e32ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Jubelio123!"
+    }, {
+      "id": "f777b1ba-2812-4dbc-91ee-81cfecccf427",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-button",
+      "targets": [
+        ["css=.ladda-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "804b3d14-604d-464c-b14e-22e0c90f8bd5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8294d3ad-dc8e-4516-8197-d237b42aeeba",
+    "name": "Pengaturan Stock Persediaan",
+    "commands": [{
+      "id": "3cac09bd-60fd-4a01-b2c5-cb9e9584d7df",
+      "comment": "",
+      "command": "open",
+      "target": "https://app.jubelio.com/home/inventory",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b98a0577-6ec5-4c0b-8444-b20c11d276c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b45b129-d531-45f1-a7d0-5cb8d9d775f7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ladda-button:nth-child(2)",
+      "targets": [
+        ["css=.ladda-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Penyesuaian Persediaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e6d485-5bec-476a-9a23-f351f6c14139",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ladda-button:nth-child(2)",
+      "targets": [
+        ["css=.ladda-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Penyesuaian Persediaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3beae473-7989-478d-8aea-555d6dfcf946",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary > .ladda-label",
+      "targets": [
+        ["css=.btn-primary > .ladda-label", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Penyesuaian Persediaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7715eab8-9d80-42f9-b838-13c302e2d48e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "14 Mei 2023"
+    }, {
+      "id": "00f9e951-b6f7-4244-a2e3-16f2f6ea0cc6",
+      "comment": "",
+      "command": "click",
+      "target": "name=note",
+      "targets": [
+        ["name=note", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-group .form-control", "css:finder"],
+        ["xpath=//textarea[@name='note']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c46447-53e9-464d-92e3-236d5496246c",
+      "comment": "",
+      "command": "type",
+      "target": "name=note",
+      "targets": [
+        ["name=note", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-group .form-control", "css:finder"],
+        ["xpath=//textarea[@name='note']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Tersedia"
+    }, {
+      "id": "75ff374b-42f9-4f48-bba3-6412454dda81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12 > .form-control",
+      "targets": [
+        ["css=.col-md-12 > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "444c4887-7d8d-41e8-96eb-0ac1c95cab26",
+      "comment": "",
+      "command": "type",
+      "target": "css=.col-md-12 > .form-control",
+      "targets": [
+        ["css=.col-md-12 > .form-control", "css:finder"],
+        ["xpath=//input[@value='Purple-11']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Purple-11"
+    }, {
+      "id": "c530eaaf-ec22-4d8e-8737-14e6d526ebb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-btn .ladda-label",
+      "targets": [
+        ["css=.input-group-btn .ladda-label", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/span/button/span", "xpath:idRelative"],
+        ["xpath=//span/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ef8412b-89e3-45a4-acc3-131c904ff086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6380d78-d082-4aa9-839f-5020131d0017",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9fd34da-f915-4fa4-92e0-8e5de46ab994",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "169c1834-89d6-463f-a5ea-4c729b798895",
+      "comment": "",
+      "command": "type",
+      "target": "css=.editor-main",
+      "targets": [
+        ["css=.editor-main", "css:finder"],
+        ["xpath=//input[@value='1']", "xpath:attributes"],
+        ["xpath=//body[@id='page-top']/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "1200000"
+    }, {
+      "id": "52522a2d-9985-4fa3-b85f-3fede74271b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Cell:nth-child(2) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(2) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "768394cb-3e60-49fd-9f50-1d3a5e2c4f21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Canvas",
+      "targets": [
+        ["css=.react-grid-Canvas", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5c6d0b8-e98f-4850-8825-db39ffc3713b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9119489e-541f-4be2-8e53-eacbaaa4482e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "503fd5b7-0292-4a3d-9601-7780f3813d12",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.react-grid-Cell:nth-child(6) .text-right",
+      "targets": [
+        ["css=.react-grid-Cell:nth-child(6) .text-right", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[6]/div/div/span/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49e02740-1fba-4a42-894d-3327e17b55f3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.editor-main",
+      "targets": [
+        ["css=.editor-main", "css:finder"],
+        ["xpath=//input[@value='1200000']", "xpath:attributes"],
+        ["xpath=//body[@id='page-top']/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "12000000"
+    }, {
+      "id": "6b9ab417-4ea8-4640-8246-ddd763861ef0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-grid-Canvas",
+      "targets": [
+        ["css=.react-grid-Canvas", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63f30f4c-ee93-4072-95a0-7a9076ad4fe4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-editor",
+      "targets": [
+        ["css=.page-editor", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a7e3bc-23bb-49d0-b6e6-c9bd84ceb0c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right > .ladda-button",
+      "targets": [
+        ["css=.pull-right > .ladda-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[3]/div/div/div/div[2]/div/div/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simpan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "933e5bfc-887a-4810-85ec-89f731e3ff67",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "956530bd-d3cc-4fa3-ab90-453901baaec5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e6bfa73-7c3e-4193-bb99-d41c103b80b9"]
+  }],
+  "urls": ["https://app.jubelio.com/", "https://app.jubelio.com/home/inventory"],
+  "plugins": []
+}

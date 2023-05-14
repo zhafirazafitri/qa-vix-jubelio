@@ -1,0 +1,81 @@
+{
+  "id": "5347b3e8-526d-4048-94ee-1012f7e1c80e",
+  "version": "2.0",
+  "name": "Login Jubelio",
+  "url": "https://app.jubelio.com",
+  "tests": [{
+    "id": "6e6bfa73-7c3e-4193-bb99-d41c103b80b9",
+    "name": "Login",
+    "commands": [{
+      "id": "3de14b47-f98e-4232-8bbc-b4229f15b5d5",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c637e5f-7257-4da0-81ea-f447fad4c23f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c135c992-0139-46a9-8b40-04122b05e756",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "qa.rakamin.jubelio@gmail.com"
+    }, {
+      "id": "ab9ca769-1294-41d3-b316-8e6e8e7e32ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Jubelio123!"
+    }, {
+      "id": "f777b1ba-2812-4dbc-91ee-81cfecccf427",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-button",
+      "targets": [
+        ["css=.ladda-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "804b3d14-604d-464c-b14e-22e0c90f8bd5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "956530bd-d3cc-4fa3-ab90-453901baaec5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e6bfa73-7c3e-4193-bb99-d41c103b80b9"]
+  }],
+  "urls": ["https://app.jubelio.com/"],
+  "plugins": []
+}
